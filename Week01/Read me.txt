@@ -2,6 +2,13 @@ Hello
 Discovery Board Link
 https://www.st.com/en/evaluation-tools/stm32f4discovery.html
 
-STLink firmware update
-https://www.st.com/en/development-tools/stsw-link009.html
-
+Installation Steps and sections content
+1. ST-LINK driver installation. http://www.st.com/en/development-tools/stsw-link009.html
+2. ST-LINK Firmware upgrade. http://www.st.com/en/development-tools/stsw-link007.html
+3. Install OpenSTM, Oracle java 
+4. Install keil
+5. Read Discovery manual. http://www.st.com/content/ccc/resource/technical/document/user_manual/70/fe/4a/3f/e7/e1/4f/7d/DM00039084.pdf/files/DM00039084.pdf/jcr:content/translations/en.DM00039084.pdf
+6. Work with LED & Buttons with ready APIs in KEIL
+7. Work with LED & Buttons with ready APIs in OpenSTM
+8. Debugging section how it works
+9. MCU
