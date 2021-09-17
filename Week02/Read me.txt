@@ -1,1 +1,33 @@
-Hello
+11. 
+• Bus interface introduction. 
+• deffrence between AHB, APB. 
+• buses speed and connected peripherals. 
+• bus matrix.
+
+12. 
+• introduction to clock. 
+• Clock sources ---> 
+Crystal (exrernal) HSE.
+RC oscillator (internal) HSI.
+PLL (internal).
+• STM32CubeMX Clock configuration, measure by logic analyzer 
+
+13.
+• Peripheral clock control to enable peripherals. 
+• Enable ADC1, GPIOA
+
+14.
+• Understanding Vector table 
+
+15.
+• Interrupts available. 
+• GPIO Interrupt. 
+• Use button as EXTI
+
+16.
+• Understand the MCU specific header file
+• What it is, what includes
+• Variety of many controllers in the series, and registers, addresses defined 
+
+17.
+• Importance of volatile variables
