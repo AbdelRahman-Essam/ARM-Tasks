@@ -1,0 +1,35 @@
+     8: { 
+0x080002E8 B083      SUB           sp,sp,#0x0C
+0x080002EA 2000      MOVS          r0,#0x00
+0x080002EC 9002      STR           r0,[sp,#0x08]
+     9:         uint32_t value = 0; 
+0x080002EE 9001      STR           r0,[sp,#0x04]
+0x080002F0 2004      MOVS          r0,#0x04
+0x080002F2 F2C20000  MOVT          r0,#0x2000
+    10:         uint32_t *p = (uint32_t *) SRAM_ADDRESS1; 
+    11:          
+0x080002F6 9000      STR           r0,[sp,#0x00]
+    12:         while(1) 
+    13:         { 
+    14:                  
+0x080002F8 E7FF      B             0x080002FA
+    15:                 value = *p; 
+0x080002FA 9800      LDR           r0,[sp,#0x00]
+0x080002FC 6800      LDR           r0,[r0,#0x00]
+0x080002FE 9001      STR           r0,[sp,#0x04]
+    16:                 if(value) break; 
+    17:         } 
+    18:          
+0x08000300 9801      LDR           r0,[sp,#0x04]
+0x08000302 B108      CBZ           r0,0x08000308
+0x08000304 E7FF      B             0x08000306
+0x08000306 E000      B             0x0800030A
+    12:         while(1) 
+    13:         { 
+    14:                  
+    15:                 value = *p; 
+    16:                 if(value) break; 
+    17:         } 
+    18:          
+0x08000308 E7F7      B             0x080002FA
+    19:         while(1); 

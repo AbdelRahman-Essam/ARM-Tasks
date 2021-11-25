@@ -1,0 +1,12 @@
+     8: { 
+     9:         uint32_t value = 0; 
+    10:         uint32_t *p = (uint32_t *) SRAM_ADDRESS1; 
+    11:          
+    12:         while(1) 
+    13:         { 
+    14:                  
+0x080002E4 2004      MOVS          r0,#0x04
+0x080002E6 F2C20000  MOVT          r0,#0x2000
+    15:                 value = *p; 
+0x080002EA 6800      LDR           r0,[r0,#0x00]
+    16:                 if(value) break; 
