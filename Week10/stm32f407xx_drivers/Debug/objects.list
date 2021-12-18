@@ -1,0 +1,8 @@
+"drivers/src/stm32f407_i2c.o"
+"drivers/src/stm32f407xx_gpio.o"
+"drivers/src/stm32f407xx_rcc.o"
+"drivers/src/stm32f407xx_spi.o"
+"drivers/src/stm32f407xx_usart.o"
+"src/005spi_tx_testing.o"
+"startup/startup_stm32.o"
+"startup/sysmem.o"
